@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+
+        <TextView
+            android:id="@+id/title_change_device_name"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:background="#666"
+            android:paddingLeft="5dp"
+            android:text="@string/title_change_device_name"
+            android:textColor="#fff"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/text_device_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLength="10"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/check_enable_change_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_enable_change_pin"
+        android:onClick="onCheckClicked"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+
+        <TextView
+            android:id="@+id/title_change_device_pin"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:background="#666"
+            android:paddingLeft="5dp"
+            android:text="@string/title_change_device_pin"
+            android:textColor="#fff"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/text_device_pin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_change_device_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666"
+        android:paddingLeft="5dp"
+        android:text="@string/message_change_device_pin"
+        android:textColor="#fff"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_accept"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_accept"
+            android:onClick="onAcceptChange"/>
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_cancel"
+            android:onClick="onCancelChange"/>
+
+    </LinearLayout>
+
+</LinearLayout>

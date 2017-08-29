@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/include_joystick"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip">
+
+        <TableRow>
+            <TextView
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:text="X"/>
+
+            <TextView
+                android:id="@+id/TextViewX"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y"/>
+
+            <TextView
+                android:id="@+id/TextViewY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </TableRow>
+    </TableLayout>
+
+    <com.brothers.development.remotecontrol.joystick.JoystickView
+        android:id="@+id/joystickView"
+        android:layout_width="175dip"
+        android:layout_height="175dip"
+        android:layout_marginTop="20dip"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Remote Control</string>
+
+    <!--  BluetoothService-->
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="title_connecting">Connecting...</string>
+    <string name="title_connected_to">Connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">Not Connected</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving BluetoothService.</string>
+
+    <!--  MainActivity-->
+    <string name="not_connected_device">Not connected to the device</string>
+    <string name="not_available_bluetooth">Bluetooth is not available</string>
+    <string name="not_applied_changes">No changes are applied to the device</string>
+    <string name="applied_changes">Changes are applied on the device</string>
+    <string name="connection_lost">Connection Lost...</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">Scanning for Devices...</string>
+    <string name="select_device">Select a Device to Connect</string>
+    <string name="none_paired">No Devices have been Paired</string>
+    <string name="none_found">No Devices Found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for Devices</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Connect a Device</string>
+    <string name="configuration">Configuration Device</string>
+
+    <!--  DeviceConfigurationActivity -->
+    <string name="button_accept">Accept</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="title_change_device_name">Change Device Name</string>
+    <string name="title_change_device_pin">Change Device PIN</string>
+    <string name="message_change_device_pin">Enter PIN code: Only four numbers ranging from 0000 to 9999</string>
+    <string name="check_enable_change_pin">Enable Change Device PIN</string>
+    <string name="configuration_device">Configuration Device</string>
+
+</resources>
